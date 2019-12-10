@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"flag"
-	"fmt"
 	"io/ioutil"
 	"log"
 )
@@ -98,8 +97,8 @@ func main() {
 	}
 
 	for i, nums := range testSets {
-		log.Println("TEST #", i)
-		log.Println(nums)
+		log.Println("TEST #", i+1)
+		log.Println("LIST:", nums)
 		fourthLargest, err := FourthLargest(nums)
 		if err != nil {
 			log.Println("error:", err.Error())
