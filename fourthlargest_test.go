@@ -5,11 +5,12 @@ import (
 	"testing"
 )
 
+// TestPlanFourthLargest - test scenario
 type TestPlanFourthLargest struct {
-	Name        string
-	Input       []int
-	Expectation int
-	Error       error
+	Name        string // Description of test
+	Input       []int  // List of ints
+	Expectation int    // Expected Result
+	Error       error  // Expected Error
 }
 
 func TestFourthLargest(t *testing.T) {

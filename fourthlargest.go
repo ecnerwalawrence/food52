@@ -83,7 +83,13 @@ func FourthLargest(nums []int) (int, error) {
 
 func main() {
 
-	jsonPtr := flag.String("json", "sample_input.json", "a string")
+	/**
+	  Convenience Logic for caller to input their test cases
+
+	  TO RUN:
+		  go run ./... -json=sample_input.json
+	*/
+	jsonPtr := flag.String("json", "sample_input.json", "json input containings an array of test cases.")
 	flag.Parse()
 
 	byt, err := ioutil.ReadFile(*jsonPtr)
